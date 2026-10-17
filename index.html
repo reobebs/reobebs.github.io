@@ -3,133 +3,649 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General/Admin Virtual Assistant Portfolio</title>
-    <!-- Links to your 100% locally hosted stylesheet -->
+
+    <title>Reo Bebs | Virtual Assistant Portfolio</title>
+    <meta name="description" content="Meet Reo Bebs, your reliable General and Administrative Virtual Assistant. Helping businesses stay organized, productive, and on track.">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-    <!-- STICKY NAVIGATION BAR -->
-    <nav class="bg-white border-b border-gray-200 p-4 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <span class="font-bold text-xl text-blue-600 tracking-tight">VA.Portfolio</span>
-            <div class="space-x-6 font-medium text-gray-600 text-sm md:text-base">
-                <a href="#hero" class="hover:text-blue-600 transition">Intro</a>
-                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
-                <a href="#demo" class="hover:text-blue-600 transition">Demos</a>
-                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+<body class="bg-[#faf9f6] text-[#343b32] antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-50 border-b border-[#e8e7df] bg-[#faf9f6]/95 backdrop-blur-md">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
+
+            <a href="#home" class="text-xl font-bold tracking-tight">
+                reo<span class="text-[#7c956b]">.</span>
+                <span class="text-sm font-medium text-[#777d70]">b e b s</span>
+            </a>
+
+            <div class="hidden items-center gap-8 text-sm font-medium md:flex">
+                <a href="#about" class="transition hover:text-[#7c956b]">About</a>
+                <a href="#services" class="transition hover:text-[#7c956b]">Services</a>
+                <a href="#portfolio" class="transition hover:text-[#7c956b]">Portfolio</a>
+                <a href="#process" class="transition hover:text-[#7c956b]">My Process</a>
+                <a href="#contact" class="rounded-full bg-[#526b49] px-5 py-2.5 text-white transition hover:bg-[#40563a]">Let's Talk ↗</a>
+            </div>
+
+            <button id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                class="rounded-lg border border-[#e1e2d8] px-3 py-2 text-xl md:hidden">
+                ☰
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden border-t border-[#e8e7df] px-5 py-4 md:hidden">
+            <div class="flex flex-col gap-4 text-sm font-medium">
+                <a href="#about" class="mobile-link">About</a>
+                <a href="#services" class="mobile-link">Services</a>
+                <a href="#portfolio" class="mobile-link">Portfolio</a>
+                <a href="#process" class="mobile-link">My Process</a>
+                <a href="#contact" class="mobile-link">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header id="hero" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24 px-6 text-center scroll-mt-16">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Hi, I'm Your Next Executive VA</h1>
-            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8">
-                I streamline day-to-day administrative puzzles, optimize chaos into structure, and save business owners up to 20+ hours every week.
-            </p>
-            <a href="#contact" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-50 transition inline-block">
-                Delegate Your Tasks
-            </a>
+
+    <!-- HERO -->
+    <header id="home" class="scroll-mt-24 overflow-hidden">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-2 lg:gap-20 lg:py-28">
+
+            <div>
+                <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#dce4d5] bg-[#eff3eb] px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#526b49]">
+                    <span class="h-2 w-2 rounded-full bg-[#7c956b]"></span>
+                    Your reliable virtual assistant
+                </div>
+
+                <h1 class="max-w-2xl text-4xl font-semibold leading-[1.15] tracking-tight sm:text-5xl lg:text-6xl">
+                    Less busywork.<br>
+                    More room to
+                    <span class="font-serif italic text-[#7c956b]">grow.</span>
+                </h1>
+
+                <p class="mt-6 max-w-xl text-base leading-8 text-[#777d70] sm:text-lg">
+                    Hi, I'm Reo Bebs! I help busy entrepreneurs and small businesses stay organized through dependable administrative support, thoughtful organization, and attention to detail.
+                </p>
+
+                <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                    <a href="#portfolio"
+                        class="inline-flex items-center justify-center gap-2 rounded-full bg-[#526b49] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-1 hover:bg-[#40563a]">
+                        Explore My Work <span>↗</span>
+                    </a>
+
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center rounded-full border border-[#d8dacf] px-7 py-3.5 text-sm font-semibold transition duration-300 hover:-translate-y-1 hover:border-[#7c956b]">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-[#777d70]">
+                    <span class="flex items-center gap-2">
+                        <span class="text-[#7c956b]">✓</span> Organized and detail-oriented
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <span class="text-[#7c956b]">✓</span> Client-focused support
+                    </span>
+                </div>
+            </div>
+
+            <!-- PROFILE VISUAL -->
+            <div class="relative mx-auto w-full max-w-md lg:max-w-lg">
+                <div class="absolute -right-3 -top-3 h-full w-full rounded-[2rem] border border-[#dce4d5] sm:-right-5 sm:-top-5"></div>
+
+                <div class="relative flex min-h-[390px] items-center justify-center overflow-hidden rounded-[2rem] bg-[#e7eadf] p-6 sm:min-h-[490px] sm:p-10">
+                    <!-- Replace with assets/reo-profile.jpg when you have a profile photo -->
+                    <div class="text-center">
+                        <div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-4 border-white/80 bg-[#d5ddcb] text-5xl shadow-sm sm:h-40 sm:w-40 sm:text-6xl">
+                            🌿
+                        </div>
+
+                        <p class="mt-7 font-serif text-3xl italic text-[#526b49]">Hello, I'm Reo!</p>
+                        <p class="mt-2 text-sm text-[#777d70]">Your behind-the-scenes support partner</p>
+
+                        <div class="mx-auto mt-7 h-px w-16 bg-[#b9c7ad]"></div>
+
+                        <p class="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#526b49]">
+                            Organized · Reliable · Proactive
+                        </p>
+                    </div>
+
+                    <div class="absolute left-4 top-5 rounded-2xl border border-white/70 bg-white/85 px-4 py-3 shadow-sm sm:left-6 sm:top-8">
+                        <p class="text-xs text-[#777d70]">Your daily operations</p>
+                        <p class="mt-1 text-sm font-semibold">In good hands ✨</p>
+                    </div>
+
+                    <div class="absolute bottom-5 right-4 rounded-2xl border border-white/70 bg-white/85 px-4 py-3 shadow-sm sm:bottom-8 sm:right-6">
+                        <p class="text-xs text-[#777d70]">My priority</p>
+                        <p class="mt-1 text-sm font-semibold">Making life easier</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="py-20 px-6 max-w-6xl mx-auto scroll-mt-16">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Core Capabilities</h2>
-        <p class="text-center text-gray-500 max-w-xl mx-auto mb-12">Practical administrative skillsets built to keep your daily corporate operations running seamlessly.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <div class="text-blue-600 text-3xl mb-4">📅</div>
-                <h3 class="text-xl font-bold mb-2">Calendar Coordination</h3>
-                <p class="text-gray-600 text-sm">Handling complex multi-party invites, time-zone buffer tracking, and gatekeeping schedules.</p>
+
+    <!-- INTRO STRIP -->
+    <section class="border-y border-[#e8e7df] bg-white">
+        <div class="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-5 py-8 sm:px-8 md:grid-cols-4">
+
+            <div class="text-center">
+                <p class="text-sm font-semibold">Administrative Support</p>
+                <p class="mt-1 text-xs text-[#888d80]">Everyday organization</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <div class="text-blue-600 text-3xl mb-4">📥</div>
-                <h3 class="text-xl font-bold mb-2">Email Optimization</h3>
-                <p class="text-gray-600 text-sm">Reaching Inbox Zero via strict category filters, archiving routines, and template replies.</p>
+
+            <div class="text-center">
+                <p class="text-sm font-semibold">Email & Calendar</p>
+                <p class="mt-1 text-xs text-[#888d80]">Better time management</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <div class="text-blue-600 text-3xl mb-4">✈️</div>
-                <h3 class="text-xl font-bold mb-2">Travel Logistics</h3>
-                <p class="text-gray-600 text-sm">Building thorough, multi-destination plans across flights, accommodations, and transit timings.</p>
+
+            <div class="text-center">
+                <p class="text-sm font-semibold">Research & Data</p>
+                <p class="mt-1 text-xs text-[#888d80]">Accurate information</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <div class="text-blue-600 text-3xl mb-4">🎨</div>
-                <h3 class="text-xl font-bold mb-2">Canva Business Assets</h3>
-                <p class="text-gray-600 text-sm">Designing clean layout templates, client-facing slides, and basic digital branding guides.</p>
+
+            <div class="text-center">
+                <p class="text-sm font-semibold">Document Creation</p>
+                <p class="mt-1 text-xs text-[#888d80]">Clear, polished outputs</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
+        <div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:items-center md:gap-20">
+
+            <div>
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">A little about me</p>
+
+                <h2 class="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+                    Behind every organized business is someone who cares about the details.
+                </h2>
+
+                <p class="mt-6 leading-8 text-[#777d70]">
+                    I believe that good support makes a real difference. My goal is to help business owners spend less time managing repetitive tasks and more time doing what matters most.
+                </p>
+
+                <p class="mt-4 leading-8 text-[#777d70]">
+                    From organizing information to preparing documents and keeping daily tasks on track, I approach every assignment with care, consistency, and a willingness to learn.
+                </p>
+
+                <a href="#contact" class="mt-7 inline-flex items-center gap-2 font-semibold text-[#526b49] transition hover:gap-4">
+                    Let's work together <span>→</span>
+                </a>
+            </div>
+
+            <div class="rounded-3xl bg-[#eef0e8] p-7 sm:p-10">
+                <p class="font-serif text-2xl italic text-[#526b49]">How I approach every task</p>
+
+                <div class="mt-8 space-y-7">
+
+                    <div class="flex gap-4">
+                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">✦</div>
+                        <div>
+                            <h3 class="font-semibold">Attention to Detail</h3>
+                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I value accuracy, clear communication, and well-organized work.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">♡</div>
+                        <div>
+                            <h3 class="font-semibold">Dependable Support</h3>
+                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I take responsibilities seriously and aim to deliver work on time.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">↗</div>
+                        <div>
+                            <h3 class="font-semibold">Continuous Improvement</h3>
+                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I welcome feedback and look for better ways to get things done.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services" class="scroll-mt-24 bg-white px-5 py-20 sm:px-8 sm:py-28">
+        <div class="mx-auto max-w-7xl">
+
+            <div class="mx-auto max-w-2xl text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">What I can help with</p>
+                <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Support that keeps things moving.</h2>
+                <p class="mt-4 leading-7 text-[#777d70]">
+                    Practical assistance for the tasks that keep your business running smoothly.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">📋</div>
+                    <h3 class="mt-5 text-lg font-semibold">Administrative Support</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Document preparation, file organization, data entry, and everyday administrative tasks.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Organize & simplify</p>
+                </article>
+
+                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">📅</div>
+                    <h3 class="mt-5 text-lg font-semibold">Email & Calendar Management</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Inbox organization, appointment scheduling, calendar updates, and reminders.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Stay on schedule</p>
+                </article>
+
+                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">🔎</div>
+                    <h3 class="mt-5 text-lg font-semibold">Online Research</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Information gathering, comparisons, internet research, and organized summaries.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Find useful insights</p>
+                </article>
+
+                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">📊</div>
+                    <h3 class="mt-5 text-lg font-semibold">Data Entry & Spreadsheets</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Data organization, spreadsheet formatting, record updates, and basic reporting.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Keep data organized</p>
+                </article>
+
+                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">🎨</div>
+                    <h3 class="mt-5 text-lg font-semibold">Canva & Presentations</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Simple visual assets, presentation slides, document layouts, and branded templates.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Present with clarity</p>
+                </article>
+
+                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">✈️</div>
+                    <h3 class="mt-5 text-lg font-semibold">Travel & Task Planning</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Itinerary preparation, task lists, deadline tracking, and travel research.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Plan ahead</p>
+                </article>
+
             </div>
         </div>
     </section>
 
-    <!-- DEMO WORKSPACE / MOCK PROJECTS SECTION -->
-    <section id="demo" class="bg-gray-100 py-20 px-6 scroll-mt-16">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-2">Interactive Mock Workspaces</h2>
-            <p class="text-center text-gray-500 max-w-xl mx-auto mb-12">Live case validation displays simulating actual day-to-day VA deliverables.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Demo 1: Google Calendar -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between p-6">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Scheduling</span>
-                        <h3 class="text-xl font-bold mt-3 mb-2">Google Calendar Blueprint</h3>
-                        <p class="text-gray-600 text-sm mb-4">A complete sample of a color-coded, clash-free executive corporate week managing overlapping international time-zones.</p>
-                    </div>
-                    <a href="YOUR_GOOGLE_CALENDAR_LINK_HERE" target="_blank" class="inline-block text-center bg-indigo-600 text-white font-medium text-sm px-4 py-2.5 rounded-lg hover:bg-indigo-700 transition">View Live Calendar Sheet / Image</a>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
+        <div class="mx-auto max-w-7xl">
+
+            <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">Selected work</p>
+                    <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">A look at what I can create.</h2>
                 </div>
 
-                <!-- Demo 2: Itinerary -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between p-6">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Operations</span>
-                        <h3 class="text-xl font-bold mt-3 mb-2">Corporate Travel Itinerary</h3>
-                        <p class="text-gray-600 text-sm mb-4">A detailed business travel breakdown compiling confirmation IDs, local weather insights, transport windows, and meeting checkpoints.</p>
+                <p class="max-w-md text-sm leading-7 text-[#777d70]">
+                    Sample projects demonstrating my approach to organization, documentation, and administrative support.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-6 md:grid-cols-2">
+
+                <!-- PROJECT 1 -->
+                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex min-h-56 items-center justify-center bg-[#e8ede2] p-8">
+                        <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
+                            <div class="flex items-center justify-between border-b border-[#ecece5] pb-4">
+                                <div>
+                                    <p class="text-xs text-[#888d80]">WEEKLY OVERVIEW</p>
+                                    <p class="mt-1 font-semibold">Team Schedule</p>
+                                </div>
+                                <span class="rounded-lg bg-[#edf2e8] px-3 py-2 text-xs text-[#526b49]">This week</span>
+                            </div>
+
+                            <div class="mt-4 space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-14 text-xs text-[#888d80]">09:00 AM</span>
+                                    <div class="flex-1 rounded-r-md border-l-4 border-[#7c956b] bg-[#edf2e8] px-3 py-2 text-xs">Team Meeting</div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="w-14 text-xs text-[#888d80]">11:00 AM</span>
+                                    <div class="flex-1 rounded-r-md border-l-4 border-[#d1a66b] bg-[#f8f0e4] px-3 py-2 text-xs">Project Review</div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="w-14 text-xs text-[#888d80]">02:00 PM</span>
+                                    <div class="flex-1 rounded-r-md border-l-4 border-[#91a9bc] bg-[#edf2f6] px-3 py-2 text-xs">Client Follow-up</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="YOUR_TRAVEL_ITINERARY_LINK_HERE" target="_blank" class="inline-block text-center bg-indigo-600 text-white font-medium text-sm px-4 py-2.5 rounded-lg hover:bg-indigo-700 transition">Open Itinerary Document</a>
+
+                    <div class="p-6 sm:p-8">
+                        <span class="rounded-full bg-[#edf2e8] px-3 py-1 text-xs font-semibold text-[#526b49]">Scheduling</span>
+                        <h3 class="mt-4 text-xl font-semibold">Weekly Calendar Planner</h3>
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A sample weekly schedule that organizes appointments, priorities, and important tasks in one place.</p>
+                        <a href="assets/weekly-calendar.pdf" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                            View sample <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 2 -->
+                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex min-h-56 items-center justify-center bg-[#f2eade] p-8">
+                        <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
+                            <div class="flex items-center justify-between border-b border-[#ecece5] pb-4">
+                                <div>
+                                    <p class="text-xs text-[#888d80]">TRAVEL PLAN</p>
+                                    <p class="mt-1 font-semibold">3-Day Business Trip</p>
+                                </div>
+                                <span class="text-xl">✈️</span>
+                            </div>
+
+                            <div class="mt-4 space-y-4">
+                                <div class="flex gap-3">
+                                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">01</div>
+                                    <div>
+                                        <p class="text-sm font-medium">Arrival & Check-in</p>
+                                        <p class="mt-1 text-xs text-[#888d80]">Flight details and accommodation</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">02</div>
+                                    <div>
+                                        <p class="text-sm font-medium">Meetings & Activities</p>
+                                        <p class="mt-1 text-xs text-[#888d80]">Time blocks and locations</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">03</div>
+                                    <div>
+                                        <p class="text-sm font-medium">Departure</p>
+                                        <p class="mt-1 text-xs text-[#888d80]">Transport and check-out</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 sm:p-8">
+                        <span class="rounded-full bg-[#f8f0e4] px-3 py-1 text-xs font-semibold text-[#947044]">Travel Planning</span>
+                        <h3 class="mt-4 text-xl font-semibold">Business Travel Itinerary</h3>
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A structured itinerary with travel arrangements, daily activities, and essential trip information.</p>
+                        <a href="assets/travel-itinerary.pdf" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                            View sample <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3 -->
+                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex min-h-56 items-center justify-center bg-[#e8edf1] p-8">
+                        <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
+                            <div class="flex items-center justify-between border-b border-[#ecece5] pb-4">
+                                <p class="font-semibold">Task Tracker</p>
+                                <span class="rounded-lg bg-[#edf2f6] px-3 py-2 text-xs text-[#52697b]">Overview</span>
+                            </div>
+
+                            <div class="mt-4 grid grid-cols-3 gap-2">
+                                <div class="rounded-lg bg-[#f7f8f6] p-3 text-center">
+                                    <p class="text-xl font-semibold">08</p>
+                                    <p class="mt-1 text-xs text-[#888d80]">To do</p>
+                                </div>
+                                <div class="rounded-lg bg-[#edf2e8] p-3 text-center">
+                                    <p class="text-xl font-semibold">05</p>
+                                    <p class="mt-1 text-xs text-[#888d80]">Ongoing</p>
+                                </div>
+                                <div class="rounded-lg bg-[#edf2f6] p-3 text-center">
+                                    <p class="text-xl font-semibold">12</p>
+                                    <p class="mt-1 text-xs text-[#888d80]">Done</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 space-y-3">
+                                <div class="h-2 rounded-full bg-[#edf2e8]"></div>
+                                <div class="h-2 w-4/5 rounded-full bg-[#edf2f6]"></div>
+                                <div class="h-2 w-3/5 rounded-full bg-[#f8f0e4]"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 sm:p-8">
+                        <span class="rounded-full bg-[#edf2f6] px-3 py-1 text-xs font-semibold text-[#52697b]">Organization</span>
+                        <h3 class="mt-4 text-xl font-semibold">Task & Project Tracker</h3>
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A simple tracking sheet for task priorities, progress updates, deadlines, and completion status.</p>
+                        <a href="assets/task-tracker.xlsx" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                            View sample <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4 -->
+                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex min-h-56 items-center justify-center bg-[#eee8f0] p-8">
+                        <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
+                            <div class="border-b border-[#ecece5] pb-4">
+                                <p class="text-xs text-[#888d80]">ADMINISTRATIVE TEMPLATE</p>
+                                <p class="mt-1 font-semibold">Client Information Sheet</p>
+                            </div>
+
+                            <div class="mt-4 space-y-4">
+                                <div>
+                                    <p class="text-xs text-[#888d80]">CLIENT NAME</p>
+                                    <div class="mt-2 h-8 rounded-lg border border-[#e8e7df]"></div>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-[#888d80]">CONTACT DETAILS</p>
+                                    <div class="mt-2 h-8 rounded-lg border border-[#e8e7df]"></div>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-[#888d80]">NOTES & FOLLOW-UP</p>
+                                    <div class="mt-2 h-14 rounded-lg border border-[#e8e7df]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 sm:p-8">
+                        <span class="rounded-full bg-[#f0eaf2] px-3 py-1 text-xs font-semibold text-[#80658a]">Documentation</span>
+                        <h3 class="mt-4 text-xl font-semibold">Client Information Template</h3>
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A clean sample form for keeping client details, contact information, and follow-up notes organized.</p>
+                        <a href="assets/client-information.pdf" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                            View sample <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="mt-8 text-center text-xs leading-6 text-[#888d80]">
+                Portfolio previews are illustrative mockups. Replace the sample files with your actual work before publishing.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- WORK PROCESS -->
+    <section id="process" class="scroll-mt-24 bg-[#eef0e8] px-5 py-20 sm:px-8 sm:py-28">
+        <div class="mx-auto max-w-6xl">
+
+            <div class="mx-auto max-w-2xl text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">Simple & straightforward</p>
+                <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Here's how we'll work together.</h2>
+                <p class="mt-4 leading-7 text-[#777d70]">A clear process helps us get started with confidence and stay on the same page.</p>
+            </div>
+
+            <div class="mt-14 grid gap-8 md:grid-cols-3">
+
+                <div class="relative rounded-2xl border border-[#dfe3d8] bg-white p-7">
+                    <span class="font-serif text-4xl italic text-[#a6b79a]">01</span>
+                    <h3 class="mt-5 text-lg font-semibold">Let's Connect</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">We'll discuss your business, current challenges, priorities, and the support you need.</p>
                 </div>
 
-                <!-- Demo 3: Email Use Cases -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between p-6">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Communications</span>
-                        <h3 class="text-xl font-bold mt-3 mb-2">Email Inbox Use Cases</h3>
-                        <p class="text-gray-600 text-sm mb-4">A breakdown playbook displaying professional auto-response formatting, customer escalation scripts, and filter rules.</p>
-                    </div>
-                    <a href="YOUR_EMAIL_USE_CASES_LINK_HERE" target="_blank" class="inline-block text-center bg-indigo-600 text-white font-medium text-sm px-4 py-2.5 rounded-lg hover:bg-indigo-700 transition">Review Email Playbook</a>
+                <div class="relative rounded-2xl border border-[#dfe3d8] bg-white p-7">
+                    <span class="font-serif text-4xl italic text-[#a6b79a]">02</span>
+                    <h3 class="mt-5 text-lg font-semibold">Plan & Organize</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">We'll agree on deliverables, timelines, communication, and the best way to manage your tasks.</p>
                 </div>
 
-                <!-- Demo 4: Canva Use Cases -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between p-6">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Design Production</span>
-                        <h3 class="text-xl font-bold mt-3 mb-2">Canva Branding & Presentation Slides</h3>
-                        <p class="text-gray-600 text-sm mb-4">Creative operational displays showcasing slide decks, handbook styling, and standardized brand boards designed in Canva.</p>
-                    </div>
-                    <a href="YOUR_CANVA_USE_CASES_LINK_HERE" target="_blank" class="inline-block text-center bg-indigo-600 text-white font-medium text-sm px-4 py-2.5 rounded-lg hover:bg-indigo-700 transition">Open Canva Board Link</a>
+                <div class="relative rounded-2xl border border-[#dfe3d8] bg-white p-7">
+                    <span class="font-serif text-4xl italic text-[#a6b79a]">03</span>
+                    <h3 class="mt-5 text-lg font-semibold">Get Things Done</h3>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">I'll work on agreed tasks, provide updates, and use your feedback to improve the results.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- CONTACT ME SECTION -->
-    <footer id="contact" class="bg-gray-900 text-white py-20 px-6 text-center scroll-mt-16">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Let's Streamline Your Business Today</h2>
-            <p class="text-gray-400 mb-8 max-w-xl mx-auto">Ready to focus back on big-picture growth? Let's offload your administrative overhead. Get in touch below!</p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="mailto:your.email@example.com" class="w-full sm:w-auto bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-                    your.email@example.com
-                </a>
-                <a href="YOUR_LINKEDIN_URL_HERE" target="_blank" class="w-full sm:w-auto bg-gray-800 border border-gray-700 text-gray-200 font-semibold px-6 py-3 rounded-lg hover:bg-gray-700 transition">
-                    Message on LinkedIn
+
+    <!-- FAQ -->
+    <section id="faq" class="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
+        <div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
+
+            <div>
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">Good to know</p>
+                <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">A few questions, answered.</h2>
+                <p class="mt-5 leading-7 text-[#777d70]">Have something else in mind? Feel free to reach out and tell me what you need.</p>
+                <a href="#contact" class="mt-6 inline-flex items-center gap-2 font-semibold text-[#526b49] hover:underline">
+                    Ask me a question <span>↗</span>
                 </a>
             </div>
-            <p class="text-xs text-gray-500 mt-16">&copy; 2026 Admin VA Portfolio. All assets compiled locally.</p>
+
+            <div class="divide-y divide-[#e8e7df] border-y border-[#e8e7df]">
+
+                <details class="group py-5" open>
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+                        What tasks can you help with?
+                        <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
+                        I can assist with administrative tasks, data entry, email and calendar organization, online research, document preparation, and other agreed virtual assistance tasks.
+                    </p>
+                </details>
+
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+                        What tools do you use?
+                        <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
+                        My toolkit can include Google Workspace, Microsoft Office, spreadsheets, Canva, and task management tools, depending on the client's requirements and the tools I am proficient in.
+                    </p>
+                </details>
+
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+                        Do you offer flexible arrangements?
+                        <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
+                        Availability, working hours, and project arrangements can be discussed based on your needs and my schedule.
+                    </p>
+                </details>
+
+                <details class="group py-5">
+                    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+                        How do we get started?
+                        <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
+                        Send me a message describing your business and the tasks you need help with. We can discuss the scope, expectations, and next steps.
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="scroll-mt-24 px-5 pb-20 sm:px-8 sm:pb-28">
+        <div class="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#40563a] px-6 py-14 text-center text-white sm:px-12 sm:py-20">
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#d1dfc7]">Ready when you are</p>
+
+            <h2 class="mx-auto mt-5 max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
+                Let's make your workday a little lighter.
+            </h2>
+
+            <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/75 sm:text-base">
+                Tell me what's keeping you busy. Let's explore how I can help you stay organized and focus on what matters.
+            </p>
+
+            <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+                <!-- Replace with Reo's actual email -->
+                <a href="mailto:your.email@example.com"
+                    class="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#40563a] transition hover:-translate-y-1 hover:bg-[#f0f3ec]">
+                    ✉ Email Me
+                </a>
+
+                <!-- Replace with Reo's actual LinkedIn profile -->
+                <a href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold transition hover:-translate-y-1 hover:bg-white/10">
+                    LinkedIn ↗
+                </a>
+            </div>
+
+            <p class="mt-6 text-xs text-white/60">I look forward to hearing from you!</p>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="border-t border-[#e8e7df] px-5 py-7 sm:px-8">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
+            <a href="#home" class="text-lg font-bold tracking-tight">
+                reo<span class="text-[#7c956b]">.</span>
+            </a>
+
+            <p class="text-xs text-[#888d80]">
+                © <span id="year"></span> Reo Bebs. Made with care.
+            </p>
+
+            <a href="#home" class="text-xs font-medium text-[#526b49] hover:underline">
+                Back to top ↑
+            </a>
         </div>
     </footer>
+
+
+    <!-- SMALL INTERACTIONS -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
+            menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+            mobileMenu.classList.toggle('hidden', isExpanded);
+            menuToggle.textContent = isExpanded ? '☰' : '✕';
+            menuToggle.setAttribute(
+                'aria-label',
+                isExpanded ? 'Open navigation menu' : 'Close navigation menu'
+            );
+        });
+
+        document.querySelectorAll('.mobile-link').forEach((link) => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.setAttribute('aria-label', 'Open navigation menu');
+                menuToggle.textContent = '☰';
+            });
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
 </body>
 </html>
