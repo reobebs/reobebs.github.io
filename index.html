@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Reo Bebs | Virtual Assistant Portfolio</title>
-    <meta name="description" content="Meet Reo Bebs, your reliable General and Administrative Virtual Assistant. Helping businesses stay organized, productive, and on track.">
+    <meta name="description"
+        content="Meet Reo Bebs, your reliable General and Administrative Virtual Assistant. Helping businesses stay organized, productive, and on track.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,15 +28,13 @@
                 <a href="#services" class="transition hover:text-[#7c956b]">Services</a>
                 <a href="#portfolio" class="transition hover:text-[#7c956b]">Portfolio</a>
                 <a href="#process" class="transition hover:text-[#7c956b]">My Process</a>
-                <a href="#contact" class="rounded-full bg-[#526b49] px-5 py-2.5 text-white transition hover:bg-[#40563a]">Let's Talk ↗</a>
+                <a href="#contact"
+                    class="rounded-full bg-[#526b49] px-5 py-2.5 text-white transition hover:bg-[#40563a]">Let's Talk
+                    ↗</a>
             </div>
 
-            <button id="menu-toggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-                class="rounded-lg border border-[#e1e2d8] px-3 py-2 text-xl md:hidden">
+            <button id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobile-menu" class="rounded-lg border border-[#e1e2d8] px-3 py-2 text-xl md:hidden">
                 ☰
             </button>
         </div>
@@ -53,10 +53,12 @@
 
     <!-- HERO -->
     <header id="home" class="scroll-mt-24 overflow-hidden">
-        <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-2 lg:gap-20 lg:py-28">
+        <div
+            class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-2 lg:gap-20 lg:py-28">
 
             <div>
-                <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#dce4d5] bg-[#eff3eb] px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#526b49]">
+                <div
+                    class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#dce4d5] bg-[#eff3eb] px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[#526b49]">
                     <span class="h-2 w-2 rounded-full bg-[#7c956b]"></span>
                     Your reliable virtual assistant
                 </div>
@@ -68,7 +70,8 @@
                 </h1>
 
                 <p class="mt-6 max-w-xl text-base leading-8 text-[#777d70] sm:text-lg">
-                    Hi, I'm Reo Bebs! I help busy entrepreneurs and small businesses stay organized through dependable administrative support, thoughtful organization, and attention to detail.
+                    Hi, I'm Reo Bebs! I help busy entrepreneurs and small businesses stay organized through dependable
+                    administrative support, thoughtful organization, and attention to detail.
                 </p>
 
                 <div class="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -93,38 +96,60 @@
                 </div>
             </div>
 
+
             <!-- PROFILE VISUAL -->
             <div class="relative mx-auto w-full max-w-md lg:max-w-lg">
-                <div class="absolute -right-3 -top-3 h-full w-full rounded-[2rem] border border-[#dce4d5] sm:-right-5 sm:-top-5"></div>
 
-                <div class="relative flex min-h-[390px] items-center justify-center overflow-hidden rounded-[2rem] bg-[#e7eadf] p-6 sm:min-h-[490px] sm:p-10">
-                    <!-- Replace with assets/reo-profile.jpg when you have a profile photo -->
-                    <div class="text-center">
-                        <div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full border-4 border-white/80 bg-[#d5ddcb] text-5xl shadow-sm sm:h-40 sm:w-40 sm:text-6xl">
-                            🌿
+                <!-- Decorative border -->
+                <div
+                    class="absolute -right-2 -top-2 h-full w-full rounded-[2rem] border border-[#dce4d5] sm:-right-4 sm:-top-4">
+                </div>
+
+                <!-- Main profile card -->
+                <div class="relative overflow-hidden rounded-[2rem] bg-[#e7eadf] p-4 sm:p-6">
+
+                    <!-- Profile image -->
+                    <div class="relative h-[420px] overflow-hidden rounded-[1.5rem] bg-[#d5ddcb] sm:h-[480px]">
+                        <img src="assets/reo-profile.jpg" alt="Reo Bebs, Virtual Assistant"
+                            class="h-full w-full object-cover object-center"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                        <!-- Fallback if the image is missing -->
+                        <div class="absolute inset-0 hidden flex-col items-center justify-center text-center">
+                            <span class="text-7xl">🌿</span>
+                            <p class="mt-4 font-serif text-2xl italic text-[#526b49]">Hello, I'm Reo!</p>
+                            <p class="mt-2 text-sm text-[#777d70]">Your virtual assistant</p>
                         </div>
 
-                        <p class="mt-7 font-serif text-3xl italic text-[#526b49]">Hello, I'm Reo!</p>
-                        <p class="mt-2 text-sm text-[#777d70]">Your behind-the-scenes support partner</p>
-
-                        <div class="mx-auto mt-7 h-px w-16 bg-[#b9c7ad]"></div>
-
-                        <p class="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#526b49]">
-                            Organized · Reliable · Proactive
-                        </p>
+                        <!-- Image caption -->
+                        <div
+                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent px-5 pb-6 pt-20 sm:px-7 sm:pb-8">
+                            <p class="font-serif text-3xl italic text-white sm:text-4xl">
+                                Hello, I'm Reo!
+                            </p>
+                            <p class="mt-2 text-sm text-white/90">
+                                Your behind-the-scenes support partner
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="absolute left-4 top-5 rounded-2xl border border-white/70 bg-white/85 px-4 py-3 shadow-sm sm:left-6 sm:top-8">
-                        <p class="text-xs text-[#777d70]">Your daily operations</p>
-                        <p class="mt-1 text-sm font-semibold">In good hands ✨</p>
+                    <!-- Floating badge: top -->
+                    <div
+                        class="absolute left-2 top-7 max-w-[190px] rounded-2xl border border-white/70 bg-white/95 px-3 py-3 shadow-lg sm:left-0 sm:top-10 sm:px-4">
+                        <p class="text-[10px] text-[#777d70] sm:text-xs">Your daily operations</p>
+                        <p class="mt-1 text-xs font-semibold sm:text-sm">In good hands ✨</p>
                     </div>
 
-                    <div class="absolute bottom-5 right-4 rounded-2xl border border-white/70 bg-white/85 px-4 py-3 shadow-sm sm:bottom-8 sm:right-6">
-                        <p class="text-xs text-[#777d70]">My priority</p>
-                        <p class="mt-1 text-sm font-semibold">Making life easier</p>
+                    <!-- Floating badge: bottom -->
+                    <div
+                        class="absolute bottom-8 right-2 rounded-2xl border border-white/70 bg-white/95 px-3 py-3 shadow-lg sm:bottom-10 sm:right-0 sm:px-4">
+                        <p class="text-[10px] text-[#777d70] sm:text-xs">My priority</p>
+                        <p class="mt-1 text-xs font-semibold sm:text-sm">Making life easier</p>
                     </div>
+
                 </div>
             </div>
+
 
         </div>
     </header>
@@ -170,14 +195,17 @@
                 </h2>
 
                 <p class="mt-6 leading-8 text-[#777d70]">
-                    I believe that good support makes a real difference. My goal is to help business owners spend less time managing repetitive tasks and more time doing what matters most.
+                    I believe that good support makes a real difference. My goal is to help business owners spend less
+                    time managing repetitive tasks and more time doing what matters most.
                 </p>
 
                 <p class="mt-4 leading-8 text-[#777d70]">
-                    From organizing information to preparing documents and keeping daily tasks on track, I approach every assignment with care, consistency, and a willingness to learn.
+                    From organizing information to preparing documents and keeping daily tasks on track, I approach
+                    every assignment with care, consistency, and a willingness to learn.
                 </p>
 
-                <a href="#contact" class="mt-7 inline-flex items-center gap-2 font-semibold text-[#526b49] transition hover:gap-4">
+                <a href="#contact"
+                    class="mt-7 inline-flex items-center gap-2 font-semibold text-[#526b49] transition hover:gap-4">
                     Let's work together <span>→</span>
                 </a>
             </div>
@@ -188,26 +216,32 @@
                 <div class="mt-8 space-y-7">
 
                     <div class="flex gap-4">
-                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">✦</div>
+                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">✦
+                        </div>
                         <div>
                             <h3 class="font-semibold">Attention to Detail</h3>
-                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I value accuracy, clear communication, and well-organized work.</p>
+                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I value accuracy, clear communication, and
+                                well-organized work.</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
-                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">♡</div>
+                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">♡
+                        </div>
                         <div>
                             <h3 class="font-semibold">Dependable Support</h3>
-                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I take responsibilities seriously and aim to deliver work on time.</p>
+                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I take responsibilities seriously and aim
+                                to deliver work on time.</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
-                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">↗</div>
+                        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl">↗
+                        </div>
                         <div>
                             <h3 class="font-semibold">Continuous Improvement</h3>
-                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I welcome feedback and look for better ways to get things done.</p>
+                            <p class="mt-1 text-sm leading-6 text-[#777d70]">I welcome feedback and look for better ways
+                                to get things done.</p>
                         </div>
                     </div>
 
@@ -224,7 +258,8 @@
 
             <div class="mx-auto max-w-2xl text-center">
                 <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">What I can help with</p>
-                <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Support that keeps things moving.</h2>
+                <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Support that keeps things moving.
+                </h2>
                 <p class="mt-4 leading-7 text-[#777d70]">
                     Practical assistance for the tasks that keep your business running smoothly.
                 </p>
@@ -232,45 +267,61 @@
 
             <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
-                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                <article
+                    class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
                     <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">📋</div>
                     <h3 class="mt-5 text-lg font-semibold">Administrative Support</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Document preparation, file organization, data entry, and everyday administrative tasks.</p>
-                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Organize & simplify</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Document preparation, file organization, data
+                        entry, and everyday administrative tasks.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Organize & simplify
+                    </p>
                 </article>
 
-                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                <article
+                    class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
                     <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">📅</div>
                     <h3 class="mt-5 text-lg font-semibold">Email & Calendar Management</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Inbox organization, appointment scheduling, calendar updates, and reminders.</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Inbox organization, appointment scheduling,
+                        calendar updates, and reminders.</p>
                     <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Stay on schedule</p>
                 </article>
 
-                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                <article
+                    class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
                     <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">🔎</div>
                     <h3 class="mt-5 text-lg font-semibold">Online Research</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Information gathering, comparisons, internet research, and organized summaries.</p>
-                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Find useful insights</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Information gathering, comparisons, internet
+                        research, and organized summaries.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Find useful insights
+                    </p>
                 </article>
 
-                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                <article
+                    class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
                     <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">📊</div>
                     <h3 class="mt-5 text-lg font-semibold">Data Entry & Spreadsheets</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Data organization, spreadsheet formatting, record updates, and basic reporting.</p>
-                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Keep data organized</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Data organization, spreadsheet formatting, record
+                        updates, and basic reporting.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Keep data organized
+                    </p>
                 </article>
 
-                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                <article
+                    class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
                     <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">🎨</div>
                     <h3 class="mt-5 text-lg font-semibold">Canva & Presentations</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Simple visual assets, presentation slides, document layouts, and branded templates.</p>
-                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Present with clarity</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Simple visual assets, presentation slides, document
+                        layouts, and branded templates.</p>
+                    <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Present with clarity
+                    </p>
                 </article>
 
-                <article class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
+                <article
+                    class="group rounded-2xl border border-[#e8e7df] bg-[#faf9f6] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#c6d3bc] hover:shadow-lg">
                     <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#e9efe3] text-2xl">✈️</div>
                     <h3 class="mt-5 text-lg font-semibold">Travel & Task Planning</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Itinerary preparation, task lists, deadline tracking, and travel research.</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">Itinerary preparation, task lists, deadline
+                        tracking, and travel research.</p>
                     <p class="mt-5 text-xs font-semibold uppercase tracking-wider text-[#7c956b]">Plan ahead</p>
                 </article>
 
@@ -290,14 +341,16 @@
                 </div>
 
                 <p class="max-w-md text-sm leading-7 text-[#777d70]">
-                    Sample projects demonstrating my approach to organization, documentation, and administrative support.
+                    Sample projects demonstrating my approach to organization, documentation, and administrative
+                    support.
                 </p>
             </div>
 
             <div class="mt-12 grid gap-6 md:grid-cols-2">
 
                 <!-- PROJECT 1 -->
-                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <article
+                    class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div class="flex min-h-56 items-center justify-center bg-[#e8ede2] p-8">
                         <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
                             <div class="flex items-center justify-between border-b border-[#ecece5] pb-4">
@@ -311,32 +364,42 @@
                             <div class="mt-4 space-y-3">
                                 <div class="flex items-center gap-3">
                                     <span class="w-14 text-xs text-[#888d80]">09:00 AM</span>
-                                    <div class="flex-1 rounded-r-md border-l-4 border-[#7c956b] bg-[#edf2e8] px-3 py-2 text-xs">Team Meeting</div>
+                                    <div
+                                        class="flex-1 rounded-r-md border-l-4 border-[#7c956b] bg-[#edf2e8] px-3 py-2 text-xs">
+                                        Team Meeting</div>
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <span class="w-14 text-xs text-[#888d80]">11:00 AM</span>
-                                    <div class="flex-1 rounded-r-md border-l-4 border-[#d1a66b] bg-[#f8f0e4] px-3 py-2 text-xs">Project Review</div>
+                                    <div
+                                        class="flex-1 rounded-r-md border-l-4 border-[#d1a66b] bg-[#f8f0e4] px-3 py-2 text-xs">
+                                        Project Review</div>
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <span class="w-14 text-xs text-[#888d80]">02:00 PM</span>
-                                    <div class="flex-1 rounded-r-md border-l-4 border-[#91a9bc] bg-[#edf2f6] px-3 py-2 text-xs">Client Follow-up</div>
+                                    <div
+                                        class="flex-1 rounded-r-md border-l-4 border-[#91a9bc] bg-[#edf2f6] px-3 py-2 text-xs">
+                                        Client Follow-up</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="p-6 sm:p-8">
-                        <span class="rounded-full bg-[#edf2e8] px-3 py-1 text-xs font-semibold text-[#526b49]">Scheduling</span>
+                        <span
+                            class="rounded-full bg-[#edf2e8] px-3 py-1 text-xs font-semibold text-[#526b49]">Scheduling</span>
                         <h3 class="mt-4 text-xl font-semibold">Weekly Calendar Planner</h3>
-                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A sample weekly schedule that organizes appointments, priorities, and important tasks in one place.</p>
-                        <a href="assets/weekly-calendar.pdf" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A sample weekly schedule that organizes
+                            appointments, priorities, and important tasks in one place.</p>
+                        <a href="assets/weekly-calendar.pdf" target="_blank" rel="noopener noreferrer"
+                            class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
                             View sample <span>↗</span>
                         </a>
                     </div>
                 </article>
 
                 <!-- PROJECT 2 -->
-                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <article
+                    class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div class="flex min-h-56 items-center justify-center bg-[#f2eade] p-8">
                         <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
                             <div class="flex items-center justify-between border-b border-[#ecece5] pb-4">
@@ -349,21 +412,27 @@
 
                             <div class="mt-4 space-y-4">
                                 <div class="flex gap-3">
-                                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">01</div>
+                                    <div
+                                        class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">
+                                        01</div>
                                     <div>
                                         <p class="text-sm font-medium">Arrival & Check-in</p>
                                         <p class="mt-1 text-xs text-[#888d80]">Flight details and accommodation</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-3">
-                                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">02</div>
+                                    <div
+                                        class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">
+                                        02</div>
                                     <div>
                                         <p class="text-sm font-medium">Meetings & Activities</p>
                                         <p class="mt-1 text-xs text-[#888d80]">Time blocks and locations</p>
                                     </div>
                                 </div>
                                 <div class="flex gap-3">
-                                    <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">03</div>
+                                    <div
+                                        class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#f8f0e4] text-sm">
+                                        03</div>
                                     <div>
                                         <p class="text-sm font-medium">Departure</p>
                                         <p class="mt-1 text-xs text-[#888d80]">Transport and check-out</p>
@@ -374,17 +443,21 @@
                     </div>
 
                     <div class="p-6 sm:p-8">
-                        <span class="rounded-full bg-[#f8f0e4] px-3 py-1 text-xs font-semibold text-[#947044]">Travel Planning</span>
+                        <span class="rounded-full bg-[#f8f0e4] px-3 py-1 text-xs font-semibold text-[#947044]">Travel
+                            Planning</span>
                         <h3 class="mt-4 text-xl font-semibold">Business Travel Itinerary</h3>
-                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A structured itinerary with travel arrangements, daily activities, and essential trip information.</p>
-                        <a href="assets/travel-itinerary.pdf" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A structured itinerary with travel
+                            arrangements, daily activities, and essential trip information.</p>
+                        <a href="assets/travel-itinerary.pdf" target="_blank" rel="noopener noreferrer"
+                            class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
                             View sample <span>↗</span>
                         </a>
                     </div>
                 </article>
 
                 <!-- PROJECT 3 -->
-                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <article
+                    class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div class="flex min-h-56 items-center justify-center bg-[#e8edf1] p-8">
                         <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
                             <div class="flex items-center justify-between border-b border-[#ecece5] pb-4">
@@ -416,17 +489,21 @@
                     </div>
 
                     <div class="p-6 sm:p-8">
-                        <span class="rounded-full bg-[#edf2f6] px-3 py-1 text-xs font-semibold text-[#52697b]">Organization</span>
+                        <span
+                            class="rounded-full bg-[#edf2f6] px-3 py-1 text-xs font-semibold text-[#52697b]">Organization</span>
                         <h3 class="mt-4 text-xl font-semibold">Task & Project Tracker</h3>
-                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A simple tracking sheet for task priorities, progress updates, deadlines, and completion status.</p>
-                        <a href="assets/task-tracker.xlsx" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A simple tracking sheet for task priorities,
+                            progress updates, deadlines, and completion status.</p>
+                        <a href="assets/task-tracker.xlsx" target="_blank" rel="noopener noreferrer"
+                            class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
                             View sample <span>↗</span>
                         </a>
                     </div>
                 </article>
 
                 <!-- PROJECT 4 -->
-                <article class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <article
+                    class="overflow-hidden rounded-2xl border border-[#e8e7df] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <div class="flex min-h-56 items-center justify-center bg-[#eee8f0] p-8">
                         <div class="w-full max-w-sm rounded-xl bg-white p-5 shadow-sm">
                             <div class="border-b border-[#ecece5] pb-4">
@@ -452,10 +529,13 @@
                     </div>
 
                     <div class="p-6 sm:p-8">
-                        <span class="rounded-full bg-[#f0eaf2] px-3 py-1 text-xs font-semibold text-[#80658a]">Documentation</span>
+                        <span
+                            class="rounded-full bg-[#f0eaf2] px-3 py-1 text-xs font-semibold text-[#80658a]">Documentation</span>
                         <h3 class="mt-4 text-xl font-semibold">Client Information Template</h3>
-                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A clean sample form for keeping client details, contact information, and follow-up notes organized.</p>
-                        <a href="assets/client-information.pdf" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
+                        <p class="mt-3 text-sm leading-7 text-[#777d70]">A clean sample form for keeping client details,
+                            contact information, and follow-up notes organized.</p>
+                        <a href="assets/client-information.pdf" target="_blank" rel="noopener noreferrer"
+                            class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#526b49] hover:underline">
                             View sample <span>↗</span>
                         </a>
                     </div>
@@ -464,7 +544,8 @@
             </div>
 
             <p class="mt-8 text-center text-xs leading-6 text-[#888d80]">
-                Portfolio previews are illustrative mockups. Replace the sample files with your actual work before publishing.
+                Portfolio previews are illustrative mockups. Replace the sample files with your actual work before
+                publishing.
             </p>
 
         </div>
@@ -478,7 +559,8 @@
             <div class="mx-auto max-w-2xl text-center">
                 <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">Simple & straightforward</p>
                 <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Here's how we'll work together.</h2>
-                <p class="mt-4 leading-7 text-[#777d70]">A clear process helps us get started with confidence and stay on the same page.</p>
+                <p class="mt-4 leading-7 text-[#777d70]">A clear process helps us get started with confidence and stay
+                    on the same page.</p>
             </div>
 
             <div class="mt-14 grid gap-8 md:grid-cols-3">
@@ -486,19 +568,22 @@
                 <div class="relative rounded-2xl border border-[#dfe3d8] bg-white p-7">
                     <span class="font-serif text-4xl italic text-[#a6b79a]">01</span>
                     <h3 class="mt-5 text-lg font-semibold">Let's Connect</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">We'll discuss your business, current challenges, priorities, and the support you need.</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">We'll discuss your business, current challenges,
+                        priorities, and the support you need.</p>
                 </div>
 
                 <div class="relative rounded-2xl border border-[#dfe3d8] bg-white p-7">
                     <span class="font-serif text-4xl italic text-[#a6b79a]">02</span>
                     <h3 class="mt-5 text-lg font-semibold">Plan & Organize</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">We'll agree on deliverables, timelines, communication, and the best way to manage your tasks.</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">We'll agree on deliverables, timelines,
+                        communication, and the best way to manage your tasks.</p>
                 </div>
 
                 <div class="relative rounded-2xl border border-[#dfe3d8] bg-white p-7">
                     <span class="font-serif text-4xl italic text-[#a6b79a]">03</span>
                     <h3 class="mt-5 text-lg font-semibold">Get Things Done</h3>
-                    <p class="mt-3 text-sm leading-7 text-[#777d70]">I'll work on agreed tasks, provide updates, and use your feedback to improve the results.</p>
+                    <p class="mt-3 text-sm leading-7 text-[#777d70]">I'll work on agreed tasks, provide updates, and use
+                        your feedback to improve the results.</p>
                 </div>
 
             </div>
@@ -513,8 +598,10 @@
             <div>
                 <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#7c956b]">Good to know</p>
                 <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">A few questions, answered.</h2>
-                <p class="mt-5 leading-7 text-[#777d70]">Have something else in mind? Feel free to reach out and tell me what you need.</p>
-                <a href="#contact" class="mt-6 inline-flex items-center gap-2 font-semibold text-[#526b49] hover:underline">
+                <p class="mt-5 leading-7 text-[#777d70]">Have something else in mind? Feel free to reach out and tell me
+                    what you need.</p>
+                <a href="#contact"
+                    class="mt-6 inline-flex items-center gap-2 font-semibold text-[#526b49] hover:underline">
                     Ask me a question <span>↗</span>
                 </a>
             </div>
@@ -527,7 +614,8 @@
                         <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
                     </summary>
                     <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
-                        I can assist with administrative tasks, data entry, email and calendar organization, online research, document preparation, and other agreed virtual assistance tasks.
+                        I can assist with administrative tasks, data entry, email and calendar organization, online
+                        research, document preparation, and other agreed virtual assistance tasks.
                     </p>
                 </details>
 
@@ -537,7 +625,8 @@
                         <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
                     </summary>
                     <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
-                        My toolkit can include Google Workspace, Microsoft Office, spreadsheets, Canva, and task management tools, depending on the client's requirements and the tools I am proficient in.
+                        My toolkit can include Google Workspace, Microsoft Office, spreadsheets, Canva, and task
+                        management tools, depending on the client's requirements and the tools I am proficient in.
                     </p>
                 </details>
 
@@ -547,7 +636,8 @@
                         <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
                     </summary>
                     <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
-                        Availability, working hours, and project arrangements can be discussed based on your needs and my schedule.
+                        Availability, working hours, and project arrangements can be discussed based on your needs and
+                        my schedule.
                     </p>
                 </details>
 
@@ -557,7 +647,8 @@
                         <span class="text-xl text-[#7c956b] transition group-open:rotate-45">+</span>
                     </summary>
                     <p class="mt-4 pr-6 text-sm leading-7 text-[#777d70]">
-                        Send me a message describing your business and the tasks you need help with. We can discuss the scope, expectations, and next steps.
+                        Send me a message describing your business and the tasks you need help with. We can discuss the
+                        scope, expectations, and next steps.
                     </p>
                 </details>
 
@@ -568,7 +659,8 @@
 
     <!-- CONTACT -->
     <section id="contact" class="scroll-mt-24 px-5 pb-20 sm:px-8 sm:pb-28">
-        <div class="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#40563a] px-6 py-14 text-center text-white sm:px-12 sm:py-20">
+        <div
+            class="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#40563a] px-6 py-14 text-center text-white sm:px-12 sm:py-20">
             <p class="text-xs font-bold uppercase tracking-[0.2em] text-[#d1dfc7]">Ready when you are</p>
 
             <h2 class="mx-auto mt-5 max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
@@ -576,7 +668,8 @@
             </h2>
 
             <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/75 sm:text-base">
-                Tell me what's keeping you busy. Let's explore how I can help you stay organized and focus on what matters.
+                Tell me what's keeping you busy. Let's explore how I can help you stay organized and focus on what
+                matters.
             </p>
 
             <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -587,9 +680,7 @@
                 </a>
 
                 <!-- Replace with Reo's actual LinkedIn profile -->
-                <a href="https://www.linkedin.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
                     class="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold transition hover:-translate-y-1 hover:bg-white/10">
                     LinkedIn ↗
                 </a>
@@ -602,7 +693,8 @@
 
     <!-- FOOTER -->
     <footer class="border-t border-[#e8e7df] px-5 py-7 sm:px-8">
-        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
+        <div
+            class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
             <a href="#home" class="text-lg font-bold tracking-tight">
                 reo<span class="text-[#7c956b]">.</span>
             </a>
@@ -648,4 +740,5 @@
     </script>
 
 </body>
+
 </html>
