@@ -223,11 +223,17 @@
   .inset-x-0 {
     inset-inline: 0px;
   }
+  .-top-2 {
+    top: calc(var(--spacing) * -2);
+  }
   .top-0 {
     top: 0px;
   }
   .top-7 {
     top: calc(var(--spacing) * 7);
+  }
+  .-right-2 {
+    right: calc(var(--spacing) * -2);
   }
   .right-2 {
     right: calc(var(--spacing) * 2);
@@ -235,17 +241,11 @@
   .bottom-0 {
     bottom: 0px;
   }
-  .bottom-20 {
-    bottom: calc(var(--spacing) * 20);
+  .bottom-8 {
+    bottom: calc(var(--spacing) * 8);
   }
   .left-2 {
     left: calc(var(--spacing) * 2);
-  }
-  .z-10 {
-    z-index: 10;
-  }
-  .z-20 {
-    z-index: 20;
   }
   .z-50 {
     z-index: 50;
@@ -381,14 +381,6 @@
   }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .translate-x-2 {
-    --tw-translate-x: calc(var(--spacing) * 2);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-2 {
-    --tw-translate-y: calc(var(--spacing) * 2);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -963,28 +955,26 @@
     }
   }
   @media (width >= 40rem) {
+    .sm\:-top-4 {
+      top: calc(var(--spacing) * -4);
+    }
     .sm\:top-10 {
       top: calc(var(--spacing) * 10);
+    }
+    .sm\:-right-4 {
+      right: calc(var(--spacing) * -4);
     }
     .sm\:right-0 {
       right: 0px;
     }
-    .sm\:bottom-24 {
-      bottom: calc(var(--spacing) * 24);
+    .sm\:bottom-10 {
+      bottom: calc(var(--spacing) * 10);
     }
     .sm\:left-0 {
       left: 0px;
     }
     .sm\:h-\[480px\] {
       height: 480px;
-    }
-    .sm\:translate-x-3 {
-      --tw-translate-x: calc(var(--spacing) * 3);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-    .sm\:translate-y-3 {
-      --tw-translate-y: calc(var(--spacing) * 3);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1112,21 +1102,6 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
-}
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
@@ -1302,12 +1277,24 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
       --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
@@ -1347,6 +1334,9 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
     }
   }
 }
